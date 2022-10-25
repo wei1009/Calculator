@@ -53,3 +53,7 @@ body {
 .button:hover {
   background:#4c4d4d;
 }
+
+.equals {
+  grid-column: 3/5;
+}

@@ -1,6 +1,13 @@
+function getStyleName(btn){
+    const className = {
+        "=":"equals"
+    }
+    return className[btn]
+}
+
 function Button( {value} ){
     return (
-        <button className= "button">{value}</button>
+        <button className= {`${getStyleName(value)} button`}>{value}</button>
     )
 }
 
