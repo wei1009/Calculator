@@ -17,16 +17,16 @@ const btnValues = [
 
 function App() {
   return (
-        <CalcProvider>
-        <Wrapper>
-          <Screen/>
-          <ButtonBox>
-            {btnValues.flat().map((btn, i) => (
-              <Button value = {btn} key= {i}></Button>
-            ))}
-          </ButtonBox>
-        </Wrapper>
-        </CalcProvider>
+    <CalcProvider>
+      <Wrapper>
+        <Screen />
+        <ButtonBox>
+          {btnValues.flat().map((btn, i) => (
+            <Button value={btn} key={i}></Button>
+          ))}
+        </ButtonBox>
+      </Wrapper>
+    </CalcProvider>
   );
 }
 
