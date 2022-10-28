@@ -6,7 +6,7 @@ function Screen(){
     const { calc } = useContext( CalcContext );
 
     return (
-        <Textfit className = "screen">123456789123312133212</Textfit>
+        <Textfit className="screen">{ calc.num ? calc.num : calc.res}</Textfit>
     )
 }
 
