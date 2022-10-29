@@ -1,13 +1,12 @@
-import React, { createContext, useState }from "react"
+import React, { createContext, useState } from "react"
 export const CalcContext = createContext()
 
-
-function CalcProvider({children}){
+function CalcProvider({ children }) {
 
     const [calc, setCalc] = useState({
-        sign:"",
-        num:0,
-        res:0,
+        sign: "",
+        num: 0,
+        res: 0,
     });
 
     const providerValue = {
@@ -15,7 +14,7 @@ function CalcProvider({children}){
     }
 
     return (
-        <CalcContext.Provider value={ providerValue } >
+        <CalcContext.Provider value={providerValue} >
             {children}
         </CalcContext.Provider>
     )
