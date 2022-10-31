@@ -87,7 +87,8 @@ function Button({ value }) {
             "x": signClick,
             "-": signClick,
             "+": signClick,
-            "=": equalsClick
+            "=": equalsClick,
+            "%": persenClick
         }
         if (results[value]) {
             return results[value]()
