@@ -66,9 +66,9 @@ function Button({ value }) {
                     "+": (a, b) => a + b,
                     "-": (a, b) => a - b,
                     "x": (a, b) => a * b,
-                    "/": (a, b) => a / b
+                    "/": (a, b) => a / b,
                 }
-                result[sign](a, b);
+                return result[sign](a, b);
             }
             setCalc({
                 sign: "",
@@ -76,7 +76,6 @@ function Button({ value }) {
                 num: 0
             })
         }
-
     }
 
     // User click persen button
