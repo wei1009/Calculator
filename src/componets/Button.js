@@ -66,7 +66,7 @@ function Button({ value }) {
                     "+": (a, b) => a + b,
                     "-": (a, b) => a - b,
                     "x": (a, b) => a * b,
-                    "/": (a, b) => a / b,
+                    "/": (a, b) => a / b
                 }
                 result[sign](a, b);
             }
@@ -79,6 +79,27 @@ function Button({ value }) {
 
     }
 
+    // User click persen button
+    const persenClick = () => {
+        setCalc({
+            sign: "",
+            res: (calc.res / 100),
+            num: (calc.num / 100)
+
+        })
+
+    }
+
+    // User click invert button
+    const invertClick = () => {
+        setCalc({
+            sign: "",
+            res: calc.res ? calc.res * -1 : 0,
+            num: calc.num ? calc.num * -1 : 0
+        })
+
+    }
+
     const handleBtnClick = () => {
         const results = {
             ".": commaClick,
@@ -88,7 +109,8 @@ function Button({ value }) {
             "-": signClick,
             "+": signClick,
             "=": equalsClick,
-            "%": persenClick
+            "%": persenClick,
+            "+-": invertClick
         }
         if (results[value]) {
             return results[value]()
