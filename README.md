@@ -1,7 +1,8 @@
-# Calculator
+# Calculator [Try here!](calculator_v.surge.sh)
+
 <img src="Calculator_image.jpg" alt="Calculator_image" width="22%" align='right'>
 
-### A basic calculator application created with React
+# A basic calculator application created with React
 
 
 ## How to Run the Project
