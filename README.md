@@ -1,4 +1,4 @@
-# Calculator [Try here!](calculator_v.surge.sh)
+# Calculator [Try here!](https://calculator_v.surge.sh/)
 
 <img src="Calculator_image.jpg" alt="Calculator_image" width="22%" align='right'>
 
