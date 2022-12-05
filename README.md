@@ -1,5 +1,6 @@
 # Calculator
 <img src="Calculator_image.jpg" alt="Calculator_image" width="22%" align='right'>
+
 ### A basic calculator application created with React
 
 
